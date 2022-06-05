@@ -62,6 +62,21 @@ header {
     height: 100px;
 }
 
+.logo-container {
+    width: 150px;
+}
+
+/* <a> tags are innately inline -- so in order manipulate its height, it should be set to inline-block  */
+.logo-container a {
+    display: inline-block;
+    height: 100%;
+}
+
+.logo-container img {
+    object-fit: cover;
+    width: 100%;
+}
+
 .nav-links-and-images-container {
     max-width: 1400px;
 }
@@ -71,20 +86,6 @@ nav {
     justify-content: flex-end;
     align-items: center;
     font-size: 1.2em;
-}
-
-.logo-container {
-    width: 150px;
-}
-
-.logo-container a {
-    display: inline-block;
-    height: 100%;
-}
-
-.logo-container img {
-    object-fit: cover;
-    width: 100%;
 }
 
 /* Primary Navigation */
@@ -145,6 +146,7 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 1400px;
     width: 95%;
     min-height: calc(100vh - 100px);
@@ -221,13 +223,14 @@ nav {
 
 .hero-img-container {
     width: 500px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .hero-img-container img {
-    width: 100%;
+    aspect-ratio: 5/6;
     object-fit: cover;
 }
 
@@ -366,7 +369,7 @@ nav {
         border-bottom: 1px solid rgb(184, 184, 184);
     }
 
-    .nav-links li::before {
+    .nav-links li a::before {
         display: none;
     }
 

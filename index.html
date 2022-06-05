@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     
     <title>Landing Page</title>
     
@@ -15,7 +15,7 @@
 <body>
     <header id="mobileMenu">
         <div class="logo-container">
-            <a href="/"><img src="/assets/img/BUP-logo.webp" alt="BUP Logo"></a>
+            <a href="/"><img src="images/bup-logo-150w.webp" alt="BUP Logo"></a>
         </div>
         <div class="nav-links-and-images-container">
         <nav>
@@ -50,12 +50,11 @@
             </ul>
         </nav>
             <div class="mobile-nav-image-container">
-                <img class="mobile-nav-image" src="/assets/img/bup-image-1.webp" alt="bup-promotional-image">
-                <img class="mobile-nav-image" src="/assets/img/bup-image-2.webp" alt="bup-promotional-image">
-                <img class="mobile-nav-image" src="/assets/img/bup-image-3.webp" alt="bup-promotional-image">
+                <img class="mobile-nav-image" src="images/mobile-img-1.webp" alt="bup-promotional-image">
+                <img class="mobile-nav-image" src="images/mobile-img-2.webp" alt="bup-promotional-image">
+                <img class="mobile-nav-image" src="images/mobile-img-3.webp" alt="bup-promotional-image">
             </div>
         </div>
-
     </header>
     <i id="mobileOpen" class="fa-solid fa-bars mobile-menu-open-trigger"></i>
     <main id="hero">
@@ -67,10 +66,15 @@
                 <button class="cta-button-2" type="button">Login</button>
             </div>
         </div>
-        <div class="hero-img-container">
-            <img src="/assets/img/BUP-HP-MOCKUP.webp" alt="bup-mockup">
-        </div>
+        
+            <!-- <img src="images/testing.webp" width="500" height="600" alt="bup-mockup"> -->
+            <picture>
+                <source media="(max-width: 599px)" srcset="images/bup-mockup-300w.webp" type="image/webp"/>
+                <source media="(min-width: 600px)" srcset="images/bup-mockup-500w.webp" type="image/webp"/>
+                <img src="images/bup-mockup-500w.webp" alt="BUP Mockup"/>
+            </picture>
+       
     </main>
-    <script src="/assets/js/index.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>

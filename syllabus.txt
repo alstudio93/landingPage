@@ -1,0 +1,19 @@
+Image Optimization -- https://web.dev/optimize-cls/?utm_source=lighthouse&utm_medium=devtools#images-without-dimensions
+
+Part One
+-- Create folder structure and save images with appropriate file names
+-- Create HTML skeleton structure using emmit (ctrl + 1)
+-- Include CSS in the <head> and Javascript just before the closing </body> tag
+-- Include FontAwesome in <head>
+-- Create Header / Navigation Markup (Discuss HTML Semantic Elements)
+-- Style Header / Navigation with Media Queries
+-- Add Javascript for Mobile Navigation
+
+
+Part Two
+-- Create Hero Section Markup
+-- Style Hero Section with Media Queries
+
+Part Three
+-- Add Javascript for Active Links
+
